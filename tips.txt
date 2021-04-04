@@ -1,0 +1,10 @@
+Create virtual ENV: 
+1) python3.8 -m venv .
+2) virtualenv venv
+
+Create package distribution
+1) python3 setup.py sdist bdist_wheel
+
+Upload package to pypi
+1) New package: twine upload dist/*
+2) Update old package: twine upload --skip-existing dist/*
